@@ -43,3 +43,11 @@ void Sortowanie::laczenie(int tablica[], int start, int srodek, int koniec) {
 }
 
 
+void Sortowanie::algorytm_sortowania(int tablica[], int start, int koniec) {
+    if (start < koniec) {
+        int srodek = (start + koniec) / 2;
+        algorytm_sortowania(tablica, start, srodek);
+        algorytm_sortowania(tablica, srodek + 1, koniec);
+        laczenie(tablica, start, srodek, koniec);
+    }
+}
