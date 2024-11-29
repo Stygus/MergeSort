@@ -9,4 +9,12 @@ int main() {
     cin >> liczby;
     int* tablica = new int[liczby];
     cout << "Podaj liczby, ktore chcesz posortowac posortowania: ";
+    for (int i = 0; i < liczby; i++) {
+        cin >> tablica[i];
+    }
+    Sortowanie tabela(liczby, tablica);
+    tabela.algorytm_sortowania(tablica, 0, liczby - 1);
+    cout << "Posortowane liczby od uzytkownika: ";
+    tabela.print(tablica, liczby);
+
  
