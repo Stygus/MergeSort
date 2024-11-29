@@ -4,5 +4,9 @@
 using namespace std;
 
 int main() {
-	cout << "hello world";
-}
+    int liczby = 0;
+    cout << "Podaj ilosc liczb do posortowania: ";
+    cin >> liczby;
+    int* tablica = new int[liczby];
+    cout << "Podaj liczby, ktore chcesz posortowac posortowania: ";
+ 
