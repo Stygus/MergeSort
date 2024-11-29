@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MergeSort.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Sortowanie.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sortowanie.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
