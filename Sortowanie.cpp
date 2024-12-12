@@ -64,7 +64,7 @@ void Sortowanie::scalanie(int* data, int left, int mid, int right) {
         k++;
     }
 
-    // Zwalnianie pamieci 
+	// Zwalnianie pamieci z tablic tymczasowych
     delete[] L;
     delete[] R;
 }
