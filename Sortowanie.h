@@ -17,6 +17,7 @@ public:
     /// @param size Rozmiar tablicy.
     void print(int* data, int size); // Deklaracja metody print
 
+
 private:
     /// Funkcja laczaca dwie posortowane podtablice w jedna.
     /// @param data Wskaznik na tablice danych.
