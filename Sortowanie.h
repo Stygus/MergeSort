@@ -18,6 +18,10 @@ public:
     void print(int* data, int size); // Deklaracja metody print
 
 private:
-
+    /// Funkcja laczaca dwie posortowane podtablice w jedna.
+    /// @param data Wskaznik na tablice danych.
+    /// @param left Indeks poczatkowy podtablicy.
+    /// @param mid Srodkowy indeks, dzielacy tablice na dwie czesci.
+    /// @param right Indeks koncowy podtablicy.
     void scalanie(int* data, int left, int mid, int right);
 };
