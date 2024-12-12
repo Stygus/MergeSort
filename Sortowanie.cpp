@@ -1,53 +1,77 @@
+// Sortowanie.cpp
 #include "Sortowanie.h"
-#include <iostream>
+#include <algorithm>
+#include <iostream> // Dodajemy nag³ówek iostream
 
-using namespace std;
-
-Sortowanie::~Sortowanie() {
-    delete[] tablica;
+Sortowanie::Sortowanie(int size, int* data) {
+    // Konstruktor mo¿e byæ pusty, jeœli nie potrzebujemy inicjalizacji
 }
 
-void Sortowanie::print(int* tablica, int size) {
-    for (int i = 0; i < size; i++) {
-        cout << tablica[i] << " ";
+void Sortowanie::algorytm_sortowania(int* data, int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+
+        // Sortuj pierwsz¹ i drug¹ po³owê
+        algorytm_sortowania(data, left, mid);
+        algorytm_sortowania(data, mid + 1, right);
+
+        // Scal posortowane po³ówki
+        merge(data, left, mid, right);
     }
-    cout << endl;
 }
 
-void Sortowanie::laczenie(int tablica[], int start, int srodek, int koniec) {
-    int i = start, j = srodek + 1, k = 0;
-    int* tabela_pomocniczna = new int[koniec - start + 1];
+void Sortowanie::merge(int* data, int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
 
-    while (i <= srodek && j <= koniec) {
-        if (tablica[i] <= tablica[j]) {
-            tabela_pomocniczna[k++] = tablica[i++];
+    // Utwórz tymczasowe tablice
+    int* L = new int[n1];
+    int* R = new int[n2];
+
+    // Skopiuj dane do tymczasowych tablic L[] i R[]
+    for (int i = 0; i < n1; i++)
+        L[i] = data[left + i];
+    for (int j = 0; j < n2; j++)
+        R[j] = data[mid + 1 + j];
+
+    // Scal tymczasowe tablice z powrotem do data[left..right]
+    int i = 0;
+    int j = 0;
+    int k = left;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            data[k] = L[i];
+            i++;
         }
         else {
-            tabela_pomocniczna[k++] = tablica[j++];
+            data[k] = R[j];
+            j++;
         }
+        k++;
     }
 
-    while (i <= srodek) {
-        tabela_pomocniczna[k++] = tablica[i++];
+    // Skopiuj pozosta³e elementy L[], jeœli s¹
+    while (i < n1) {
+        data[k] = L[i];
+        i++;
+        k++;
     }
 
-    while (j <= koniec) {
-        tabela_pomocniczna[k++] = tablica[j++];
+    // Skopiuj pozosta³e elementy R[], jeœli s¹
+    while (j < n2) {
+        data[k] = R[j];
+        j++;
+        k++;
     }
 
-    for (int i = 0; i < k; i++) {
-        tablica[start + i] = tabela_pomocniczna[i];
-    }
-
-    delete[] tabela_pomocniczna;
+    // Zwolnij pamiêæ
+    delete[] L;
+    delete[] R;
 }
 
-
-void Sortowanie::algorytm_sortowania(int tablica[], int start, int koniec) {
-    if (start < koniec) {
-        int srodek = (start + koniec) / 2;
-        algorytm_sortowania(tablica, start, srodek);
-        algorytm_sortowania(tablica, srodek + 1, koniec);
-        laczenie(tablica, start, srodek, koniec);
+void Sortowanie::print(int* data, int size) {
+    for (int i = 0; i < size; i++) {
+        std::cout << data[i] << " ";
     }
+    std::cout << std::endl;
 }

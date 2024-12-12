@@ -1,0 +1,60 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}Sortowanie}
+    \subitem {Sortowanie}, \hyperpage{2}
+
+  \indexspace
+
+  \item {algorytm\_sortowania}
+    \subitem {Sortowanie}, \hyperpage{3}
+
+  \indexspace
+
+  \item {D:/Visual Projekty/MergeSort/main.cpp}, \hyperpage{4}
+  \item {D:/Visual Projekty/MergeSort/MergeSort.h}, \hyperpage{5}
+  \item {D:/Visual Projekty/MergeSort/Sortowanie.cpp}, \hyperpage{5}
+  \item {D:/Visual Projekty/MergeSort/Sortowanie.h}, \hyperpage{5}
+
+  \indexspace
+
+  \item {laczenie}
+    \subitem {Sortowanie}, \hyperpage{3}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{4}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{4}
+
+  \indexspace
+
+  \item {posortowana\_tablica}
+    \subitem {Sortowanie}, \hyperpage{4}
+  \item {print}
+    \subitem {Sortowanie}, \hyperpage{3}
+
+  \indexspace
+
+  \item {rozmiar}
+    \subitem {Sortowanie}, \hyperpage{4}
+
+  \indexspace
+
+  \item {Sortowanie}, \hyperpage{2}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Sortowanie}, 
+		\hyperpage{2}
+    \subitem {algorytm\_sortowania}, \hyperpage{3}
+    \subitem {laczenie}, \hyperpage{3}
+    \subitem {posortowana\_tablica}, \hyperpage{4}
+    \subitem {print}, \hyperpage{3}
+    \subitem {rozmiar}, \hyperpage{4}
+    \subitem {Sortowanie}, \hyperpage{2, 3}
+    \subitem {tablica}, \hyperpage{4}
+
+  \indexspace
+
+  \item {tablica}
+    \subitem {Sortowanie}, \hyperpage{4}
+
+\end{theindex}

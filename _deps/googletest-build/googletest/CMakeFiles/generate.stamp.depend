@@ -1,0 +1,16 @@
+# CMake generation dependency list for this directory.
+D:/Visual Projekty/MergeSort/_deps/googletest-src/googletest/CMakeLists.txt
+D:/Visual Projekty/MergeSort/_deps/googletest-src/googletest/cmake/Config.cmake.in
+D:/Visual Projekty/MergeSort/_deps/googletest-src/googletest/cmake/gtest.pc.in
+D:/Visual Projekty/MergeSort/_deps/googletest-src/googletest/cmake/gtest_main.pc.in
+D:/Visual Projekty/MergeSort/_deps/googletest-src/googletest/cmake/internal_utils.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindThreads.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake

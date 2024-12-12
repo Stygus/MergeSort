@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+D:/Visual Projekty/MergeSort/_deps/googletest-src/googlemock/CMakeLists.txt
+D:/Visual Projekty/MergeSort/_deps/googletest-src/googlemock/cmake/gmock.pc.in
+D:/Visual Projekty/MergeSort/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake
+D:/Visual/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindThreads.cmake

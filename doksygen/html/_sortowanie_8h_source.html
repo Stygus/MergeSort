@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MergeSort: Plik źródłowy D:/Visual Projekty/MergeSort/Sortowanie.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MergeSort
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">D:/Visual Projekty/MergeSort/Sortowanie.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_sortowanie_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_sortowanie.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_sortowanie.html">Sortowanie</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_sortowanie.html#ad178bd10c698040ec162ed9e5dd96b16">   18</a></span>    <a class="code hl_function" href="class_sortowanie.html#ad178bd10c698040ec162ed9e5dd96b16">Sortowanie</a>(<span class="keywordtype">int</span> size, <span class="keywordtype">int</span>* <a class="code hl_variable" href="class_sortowanie.html#aef556856fa23dcda454f1454ef25e4c6">tablica</a>) : <a class="code hl_variable" href="class_sortowanie.html#a2813f6a8516af72677af5428d9d809ff">rozmiar</a>(<a class="code hl_variable" href="class_sortowanie.html#a2813f6a8516af72677af5428d9d809ff">rozmiar</a>), <a class="code hl_variable" href="class_sortowanie.html#aef556856fa23dcda454f1454ef25e4c6">tablica</a>(<a class="code hl_variable" href="class_sortowanie.html#aef556856fa23dcda454f1454ef25e4c6">tablica</a>) {};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="class_sortowanie.html#afd590c7fc92be2b31619e30b68928869">~Sortowanie</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sortowanie.html#ae58e0b8774fc6bdc5f2f7be069d10af2">laczenie</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="class_sortowanie.html#aef556856fa23dcda454f1454ef25e4c6">tablica</a>[], <span class="keywordtype">int</span> poczatek, <span class="keywordtype">int</span> srodek, <span class="keywordtype">int</span> koniec);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sortowanie.html#a3d768c40b18658130918d77ca6f77c41">algorytm_sortowania</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="class_sortowanie.html#aef556856fa23dcda454f1454ef25e4c6">tablica</a>[], <span class="keywordtype">int</span> poczatek, <span class="keywordtype">int</span> koniec);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sortowanie.html#ac18a0a17e89b09de0442e7b92b35af72">print</a>(<span class="keywordtype">int</span>* <a class="code hl_variable" href="class_sortowanie.html#aef556856fa23dcda454f1454ef25e4c6">tablica</a>, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_sortowanie.html#a173fd3d43431d1b967bae84ccf498784">   53</a></span>    <a class="code hl_function" href="class_sortowanie.html#a173fd3d43431d1b967bae84ccf498784">Sortowanie</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_sortowanie.html#a2813f6a8516af72677af5428d9d809ff">   56</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_sortowanie.html#a2813f6a8516af72677af5428d9d809ff">rozmiar</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_sortowanie.html#aef556856fa23dcda454f1454ef25e4c6">   59</a></span>    <span class="keywordtype">int</span>* <a class="code hl_variable" href="class_sortowanie.html#aef556856fa23dcda454f1454ef25e4c6">tablica</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code hl_variable" href="class_sortowanie.html#a2813f6a8516af72677af5428d9d809ff">rozmiar</a>];</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_sortowanie.html#a181d0c2cab3dc6da54a2505b85297658">   62</a></span>    <span class="keywordtype">int</span>* <a class="code hl_variable" href="class_sortowanie.html#a181d0c2cab3dc6da54a2505b85297658">posortowana_tablica</a> = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code hl_variable" href="class_sortowanie.html#a2813f6a8516af72677af5428d9d809ff">rozmiar</a>];</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
+</div>
+<div class="ttc" id="aclass_sortowanie_html"><div class="ttname"><a href="class_sortowanie.html">Sortowanie</a></div><div class="ttdoc">Klasa implementujaca algorytm sortowania.</div><div class="ttdef"><b>Definicja</b> Sortowanie.h:10</div></div>
+<div class="ttc" id="aclass_sortowanie_html_a173fd3d43431d1b967bae84ccf498784"><div class="ttname"><a href="class_sortowanie.html#a173fd3d43431d1b967bae84ccf498784">Sortowanie::Sortowanie</a></div><div class="ttdeci">Sortowanie()</div></div>
+<div class="ttc" id="aclass_sortowanie_html_a181d0c2cab3dc6da54a2505b85297658"><div class="ttname"><a href="class_sortowanie.html#a181d0c2cab3dc6da54a2505b85297658">Sortowanie::posortowana_tablica</a></div><div class="ttdeci">int * posortowana_tablica</div><div class="ttdoc">Tablica przechowujaca posortowane elementy.</div><div class="ttdef"><b>Definicja</b> Sortowanie.h:62</div></div>
+<div class="ttc" id="aclass_sortowanie_html_a2813f6a8516af72677af5428d9d809ff"><div class="ttname"><a href="class_sortowanie.html#a2813f6a8516af72677af5428d9d809ff">Sortowanie::rozmiar</a></div><div class="ttdeci">int rozmiar</div><div class="ttdoc">Rozmiar tablicy.</div><div class="ttdef"><b>Definicja</b> Sortowanie.h:56</div></div>
+<div class="ttc" id="aclass_sortowanie_html_a3d768c40b18658130918d77ca6f77c41"><div class="ttname"><a href="class_sortowanie.html#a3d768c40b18658130918d77ca6f77c41">Sortowanie::algorytm_sortowania</a></div><div class="ttdeci">void algorytm_sortowania(int tablica[], int poczatek, int koniec)</div><div class="ttdef"><b>Definicja</b> Sortowanie.cpp:53</div></div>
+<div class="ttc" id="aclass_sortowanie_html_ac18a0a17e89b09de0442e7b92b35af72"><div class="ttname"><a href="class_sortowanie.html#ac18a0a17e89b09de0442e7b92b35af72">Sortowanie::print</a></div><div class="ttdeci">void print(int *tablica, int size)</div><div class="ttdef"><b>Definicja</b> Sortowanie.cpp:12</div></div>
+<div class="ttc" id="aclass_sortowanie_html_ad178bd10c698040ec162ed9e5dd96b16"><div class="ttname"><a href="class_sortowanie.html#ad178bd10c698040ec162ed9e5dd96b16">Sortowanie::Sortowanie</a></div><div class="ttdeci">Sortowanie(int size, int *tablica)</div><div class="ttdef"><b>Definicja</b> Sortowanie.h:18</div></div>
+<div class="ttc" id="aclass_sortowanie_html_ae58e0b8774fc6bdc5f2f7be069d10af2"><div class="ttname"><a href="class_sortowanie.html#ae58e0b8774fc6bdc5f2f7be069d10af2">Sortowanie::laczenie</a></div><div class="ttdeci">void laczenie(int tablica[], int poczatek, int srodek, int koniec)</div><div class="ttdef"><b>Definicja</b> Sortowanie.cpp:20</div></div>
+<div class="ttc" id="aclass_sortowanie_html_aef556856fa23dcda454f1454ef25e4c6"><div class="ttname"><a href="class_sortowanie.html#aef556856fa23dcda454f1454ef25e4c6">Sortowanie::tablica</a></div><div class="ttdeci">int * tablica</div><div class="ttdoc">Tablica do posortowania.</div><div class="ttdef"><b>Definicja</b> Sortowanie.h:59</div></div>
+<div class="ttc" id="aclass_sortowanie_html_afd590c7fc92be2b31619e30b68928869"><div class="ttname"><a href="class_sortowanie.html#afd590c7fc92be2b31619e30b68928869">Sortowanie::~Sortowanie</a></div><div class="ttdeci">~Sortowanie()</div><div class="ttdef"><b>Definicja</b> Sortowanie.cpp:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano za pomocą&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,142 @@
+\doxysubsection{Dokumentacja klasy Sortowanie}
+\hypertarget{class_sortowanie}{}\label{class_sortowanie}\index{Sortowanie@{Sortowanie}}
+
+
+Klasa implementujaca algorytm sortowania.  
+
+
+
+
+{\ttfamily \#include $<$Sortowanie.\+h$>$}
+
+\doxysubsubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sortowanie_ad178bd10c698040ec162ed9e5dd96b16}{Sortowanie}} (int size, int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_sortowanie_aef556856fa23dcda454f1454ef25e4c6}{tablica}})
+\item 
+\mbox{\hyperlink{class_sortowanie_afd590c7fc92be2b31619e30b68928869}{\texorpdfstring{$\sim$}{\string~}\+Sortowanie}} ()
+\item 
+void \mbox{\hyperlink{class_sortowanie_ae58e0b8774fc6bdc5f2f7be069d10af2}{laczenie}} (int \mbox{\hyperlink{class_sortowanie_aef556856fa23dcda454f1454ef25e4c6}{tablica}}\mbox{[}$\,$\mbox{]}, int poczatek, int srodek, int koniec)
+\item 
+void \mbox{\hyperlink{class_sortowanie_a3d768c40b18658130918d77ca6f77c41}{algorytm\+\_\+sortowania}} (int \mbox{\hyperlink{class_sortowanie_aef556856fa23dcda454f1454ef25e4c6}{tablica}}\mbox{[}$\,$\mbox{]}, int poczatek, int koniec)
+\item 
+void \mbox{\hyperlink{class_sortowanie_ac18a0a17e89b09de0442e7b92b35af72}{print}} (int \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_sortowanie_aef556856fa23dcda454f1454ef25e4c6}{tablica}}, int size)
+\end{DoxyCompactItemize}
+\doxysubsubsubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sortowanie_a173fd3d43431d1b967bae84ccf498784}{Sortowanie}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_sortowanie_a2813f6a8516af72677af5428d9d809ff}{rozmiar}}
+\begin{DoxyCompactList}\small\item\em Rozmiar tablicy. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_sortowanie_aef556856fa23dcda454f1454ef25e4c6}{tablica}} = new int\mbox{[}\mbox{\hyperlink{class_sortowanie_a2813f6a8516af72677af5428d9d809ff}{rozmiar}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica do posortowania. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_sortowanie_a181d0c2cab3dc6da54a2505b85297658}{posortowana\+\_\+tablica}} = new int\mbox{[}\mbox{\hyperlink{class_sortowanie_a2813f6a8516af72677af5428d9d809ff}{rozmiar}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica przechowujaca posortowane elementy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Opis szczegółowy}
+Klasa implementujaca algorytm sortowania. 
+
+Klasa umozliwia sortowanie tablicy liczb calkowitych przy uzyciu algorytmu sortowania przez scalanie (merge sort). 
+
+\doxysubsubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_sortowanie_ad178bd10c698040ec162ed9e5dd96b16}\index{Sortowanie@{Sortowanie}!Sortowanie@{Sortowanie}}
+\index{Sortowanie@{Sortowanie}!Sortowanie@{Sortowanie}}
+\doxyparagraph{\texorpdfstring{Sortowanie()}{Sortowanie()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_sortowanie_ad178bd10c698040ec162ed9e5dd96b16} 
+Sortowanie\+::\+Sortowanie (\begin{DoxyParamCaption}\item[{int}]{size}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{tablica}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor klasy \doxylink{class_sortowanie}{Sortowanie}.
+
+Inicjalizuje obiekt klasy \doxylink{class_sortowanie}{Sortowanie}, przypisujac rozmiar tablicy i wskaznik do tablicy.
+
+size Rozmiar tablicy. tablica Wskaznik na tablice do posortowania. \Hypertarget{class_sortowanie_afd590c7fc92be2b31619e30b68928869}\index{Sortowanie@{Sortowanie}!````~Sortowanie@{\texorpdfstring{$\sim$}{\string~}Sortowanie}}
+\index{````~Sortowanie@{\texorpdfstring{$\sim$}{\string~}Sortowanie}!Sortowanie@{Sortowanie}}
+\doxyparagraph{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Sortowanie()}{\string~Sortowanie()}}
+{\footnotesize\ttfamily \label{class_sortowanie_afd590c7fc92be2b31619e30b68928869} 
+Sortowanie\+::\texorpdfstring{$\sim$}{\string~}\+Sortowanie (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Destruktor klasy \doxylink{class_sortowanie}{Sortowanie}.
+
+Zwalnia pamiec zajmowana przez dynamicznie alokowane tablice. \Hypertarget{class_sortowanie_a173fd3d43431d1b967bae84ccf498784}\index{Sortowanie@{Sortowanie}!Sortowanie@{Sortowanie}}
+\index{Sortowanie@{Sortowanie}!Sortowanie@{Sortowanie}}
+\doxyparagraph{\texorpdfstring{Sortowanie()}{Sortowanie()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_sortowanie_a173fd3d43431d1b967bae84ccf498784} 
+Sortowanie\+::\+Sortowanie (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_sortowanie_a3d768c40b18658130918d77ca6f77c41}\index{Sortowanie@{Sortowanie}!algorytm\_sortowania@{algorytm\_sortowania}}
+\index{algorytm\_sortowania@{algorytm\_sortowania}!Sortowanie@{Sortowanie}}
+\doxyparagraph{\texorpdfstring{algorytm\_sortowania()}{algorytm\_sortowania()}}
+{\footnotesize\ttfamily \label{class_sortowanie_a3d768c40b18658130918d77ca6f77c41} 
+void Sortowanie\+::algorytm\+\_\+sortowania (\begin{DoxyParamCaption}\item[{int}]{tablica}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{poczatek}{, }\item[{int}]{koniec}{}\end{DoxyParamCaption})}
+
+Algorytm sortowania przez scalanie.
+
+Glowna funkcja wykonujaca sortowanie tablicy metoda dziel i zwyciezaj (merge sort).
+
+tablica Tablica do posortowania. poczatek Indeks poczatkowy tablicy. koniec Indeks koncowy tablicy. \Hypertarget{class_sortowanie_ae58e0b8774fc6bdc5f2f7be069d10af2}\index{Sortowanie@{Sortowanie}!laczenie@{laczenie}}
+\index{laczenie@{laczenie}!Sortowanie@{Sortowanie}}
+\doxyparagraph{\texorpdfstring{laczenie()}{laczenie()}}
+{\footnotesize\ttfamily \label{class_sortowanie_ae58e0b8774fc6bdc5f2f7be069d10af2} 
+void Sortowanie\+::laczenie (\begin{DoxyParamCaption}\item[{int}]{tablica}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{poczatek}{, }\item[{int}]{srodek}{, }\item[{int}]{koniec}{}\end{DoxyParamCaption})}
+
+Funkcja pomocnicza do laczenia dwoch czesci tablicy w jednym przebiegu algorytmu sortowania przez scalanie.
+
+Funkcja ta laczy dwie czesci tablicy, posortowane osobno, w jedna posortowana czesc.
+
+tablica Tablica do posortowania. poczatek Indeks poczatkowy pierwszej czesci. srodek Indeks srodkowy, ktory dzieli tablice na dwie czesci. koniec Indeks koncowy drugiej czesci. \Hypertarget{class_sortowanie_ac18a0a17e89b09de0442e7b92b35af72}\index{Sortowanie@{Sortowanie}!print@{print}}
+\index{print@{print}!Sortowanie@{Sortowanie}}
+\doxyparagraph{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_sortowanie_ac18a0a17e89b09de0442e7b92b35af72} 
+void Sortowanie\+::print (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{tablica}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+Funkcja do wypisania zawartosci tablicy.
+
+Wypisuje na standardowe wyjscie wszystkie elementy tablicy.
+
+tablica Tablica do wypisania. size Rozmiar tablicy. 
+
+\doxysubsubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{class_sortowanie_a181d0c2cab3dc6da54a2505b85297658}\index{Sortowanie@{Sortowanie}!posortowana\_tablica@{posortowana\_tablica}}
+\index{posortowana\_tablica@{posortowana\_tablica}!Sortowanie@{Sortowanie}}
+\doxyparagraph{\texorpdfstring{posortowana\_tablica}{posortowana\_tablica}}
+{\footnotesize\ttfamily \label{class_sortowanie_a181d0c2cab3dc6da54a2505b85297658} 
+int\texorpdfstring{$\ast$}{*} Sortowanie\+::posortowana\+\_\+tablica = new int\mbox{[}\mbox{\hyperlink{class_sortowanie_a2813f6a8516af72677af5428d9d809ff}{rozmiar}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tablica przechowujaca posortowane elementy. 
+
+\Hypertarget{class_sortowanie_a2813f6a8516af72677af5428d9d809ff}\index{Sortowanie@{Sortowanie}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!Sortowanie@{Sortowanie}}
+\doxyparagraph{\texorpdfstring{rozmiar}{rozmiar}}
+{\footnotesize\ttfamily \label{class_sortowanie_a2813f6a8516af72677af5428d9d809ff} 
+int Sortowanie\+::rozmiar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rozmiar tablicy. 
+
+\Hypertarget{class_sortowanie_aef556856fa23dcda454f1454ef25e4c6}\index{Sortowanie@{Sortowanie}!tablica@{tablica}}
+\index{tablica@{tablica}!Sortowanie@{Sortowanie}}
+\doxyparagraph{\texorpdfstring{tablica}{tablica}}
+{\footnotesize\ttfamily \label{class_sortowanie_aef556856fa23dcda454f1454ef25e4c6} 
+int\texorpdfstring{$\ast$}{*} Sortowanie\+::tablica = new int\mbox{[}\mbox{\hyperlink{class_sortowanie_a2813f6a8516af72677af5428d9d809ff}{rozmiar}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tablica do posortowania. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Visual Projekty/\+Merge\+Sort/\mbox{\hyperlink{_sortowanie_8h}{Sortowanie.\+h}}\item 
+D\+:/\+Visual Projekty/\+Merge\+Sort/\mbox{\hyperlink{_sortowanie_8cpp}{Sortowanie.\+cpp}}\end{DoxyCompactItemize}
